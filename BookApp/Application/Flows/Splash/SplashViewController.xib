@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NunitoSans_7pt-SemiBold.ttf">
+            <string>NunitoSans7pt-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SplashViewController" customModule="BookApp" customModuleProvider="target">
+            <connections>
+                <outlet property="progressView" destination="sIF-PK-fJU" id="DYw-Ac-VY5"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundImage" translatesAutoresizingMaskIntoConstraints="NO" id="Snn-1r-uLo">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heartsImage" translatesAutoresizingMaskIntoConstraints="NO" id="S72-K1-UQW">
+                    <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Book App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="356-Xg-8p5">
+                    <rect key="frame" x="58" y="280" width="277" height="58"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="58" id="jIz-6L-JEl"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Georgia-Italic" family="Georgia" pointSize="52"/>
+                    <color key="textColor" red="0.8666666666666667" green="0.28235294117647058" blue="0.63137254901960782" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Book App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TVq-e3-BRu">
+                    <rect key="frame" x="16" y="344" width="361" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="Ih0-qB-vxE"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="NunitoSans7pt-SemiBold" family="Nunito Sans 7pt" pointSize="24"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="0.80492032284768211" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="sIF-PK-fJU">
+                    <rect key="frame" x="50" y="415" width="293" height="6"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="6" id="2jR-rb-3fA"/>
+                    </constraints>
+                    <color key="progressTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <color key="trackTintColor" red="1" green="1" blue="1" alpha="0.2045219370860927" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                </progressView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="356-Xg-8p5" firstAttribute="centerX" secondItem="S72-K1-UQW" secondAttribute="centerX" id="0OT-aR-TQX"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="S72-K1-UQW" secondAttribute="trailing" id="3Dn-Ts-10y"/>
+                <constraint firstItem="356-Xg-8p5" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="58" id="3bU-aO-LJA"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="S72-K1-UQW" secondAttribute="bottom" id="3jz-Bz-xhU"/>
+                <constraint firstItem="356-Xg-8p5" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="221" id="Byo-sP-Em3"/>
+                <constraint firstItem="sIF-PK-fJU" firstAttribute="centerX" secondItem="S72-K1-UQW" secondAttribute="centerX" id="F4c-bF-C8h"/>
+                <constraint firstItem="Snn-1r-uLo" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Hby-0M-pUn"/>
+                <constraint firstItem="S72-K1-UQW" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="PGR-5N-mbx"/>
+                <constraint firstItem="TVq-e3-BRu" firstAttribute="centerX" secondItem="S72-K1-UQW" secondAttribute="centerX" id="Psb-n3-Irx"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Snn-1r-uLo" secondAttribute="trailing" id="Sit-pL-KtI"/>
+                <constraint firstItem="sIF-PK-fJU" firstAttribute="top" secondItem="TVq-e3-BRu" secondAttribute="bottom" constant="47" id="UbM-mf-e2J"/>
+                <constraint firstItem="sIF-PK-fJU" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="50" id="XwX-DJ-G85"/>
+                <constraint firstAttribute="bottom" secondItem="Snn-1r-uLo" secondAttribute="bottom" id="b3u-AF-oYU"/>
+                <constraint firstItem="TVq-e3-BRu" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="dPN-yJ-Blz"/>
+                <constraint firstItem="TVq-e3-BRu" firstAttribute="top" secondItem="356-Xg-8p5" secondAttribute="bottom" constant="6" id="eK8-HC-KiF"/>
+                <constraint firstItem="S72-K1-UQW" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="oep-Sp-Bj1"/>
+                <constraint firstItem="Snn-1r-uLo" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="utR-qW-bqM"/>
+            </constraints>
+            <point key="canvasLocation" x="48" y="21"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="backgroundImage" width="375" height="667"/>
+        <image name="heartsImage" width="375" height="592"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
